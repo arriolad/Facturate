@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Factúrate simplifica la solicitud, organización y seguimiento de tus facturas.">
+  <title>Factúrate | Facturación simple</title>
+
+  <style>
+    :root {
+      --navy: #0b1f3a;
+      --blue: #1769aa;
+      --turquoise: #2b9da8;
+      --light-blue: #eaf5f8;
+      --background: #f5f8fc;
+      --white: #ffffff;
+      --text: #152941;
+      --muted: #65758a;
+      --border: #dce6f0;
+      --shadow: 0 18px 45px rgba(11, 31, 58, 0.10);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--background);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(255, 255, 255, 0.96);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .navigation {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--navy);
+      font-size: 1.35rem;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+    }
+
+    .brand-symbol {
+      display: grid;
+      width: 40px;
+      height: 40px;
+      place-items: center;
+      border-radius: 13px;
+      background: var(--turquoise);
+      color: var(--white);
+      font-size: 1.1rem;
+      box-shadow: 0 8px 20px rgba(43, 157, 168, 0.25);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+      color: var(--muted);
+      font-size: 0.95rem;
+      font-weight: 700;
+    }
+
+    .nav-links a {
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--turquoise);
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 110px 0;
+      background:
+        radial-gradient(circle at 82% 20%, rgba(43, 157, 168, 0.28), transparent 28%),
+        linear-gradient(135deg, var(--navy), #123f69);
+      color: var(--white);
+    }
+
+    .hero-content {
+      position: relative;
+      max-width: 760px;
+    }
+
+    .eyebrow {
+      margin-bottom: 20px;
+      color: #7ad5dc;
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      max-width: 720px;
+      font-size: clamp(2.7rem, 7vw, 5.3rem);
+      line-height: 1;
+      letter-spacing: -0.065em;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: 26px 0 34px;
+      color: rgba(255, 255, 255, 0.72);
+      font-size: clamp(1rem, 2.2vw, 1.2rem);
+    }
+
+    .primary-button {
+      display: inline-block;
+      padding: 15px 25px;
+      border-radius: 14px;
+      background: var(--turquoise);
+      color: var(--white);
+      font-weight: 800;
+      box-shadow: 0 12px 30px rgba(43, 157, 168, 0.30);
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    .primary-button:hover {
+      transform: translateY(-2px);
+      background: #258993;
+    }
+
+    .services {
+      padding: 90px 0;
+    }
+
+    .section-heading {
+      max-width: 650px;
+      margin-bottom: 42px;
+    }
+
+    .section-heading span {
+      color: var(--turquoise);
+      font-size: 0.76rem;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .section-heading h2 {
+      margin-top: 10px;
+      color: var(--navy);
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.1;
+      letter-spacing: -0.045em;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      min-height: 285px;
+      padding: 30px;
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      background: var(--white);
+      box-shadow: var(--shadow);
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #afd9de;
+    }
+
+    .card-number {
+      display: grid;
+      width: 46px;
+      height: 46px;
+      margin-bottom: 28px;
+      place-items: center;
+      border-radius: 15px;
+      background: var(--light-blue);
+      color: var(--turquoise);
+      font-weight: 800;
+    }
+
+    .card h3 {
+      color: var(--navy);
+      font-size: 1.25rem;
+      letter-spacing: -0.025em;
+    }
+
+    .card-data {
+      display: inline-block;
+      margin: 13px 0;
+      padding: 5px 11px;
+      border-radius: 999px;
+      background: #edf4fb;
+      color: var(--blue);
+      font-size: 0.75rem;
+      font-weight: 800;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .contact {
+      margin-bottom: 90px;
+    }
+
+    .contact-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      padding: 50px;
+      border-radius: 28px;
+      background: var(--light-blue);
+      border: 1px solid #cbe5e8;
+    }
+
+    .contact-box h2 {
+      color: var(--navy);
+      font-size: clamp(1.6rem, 4vw, 2.5rem);
+      line-height: 1.15;
+      letter-spacing: -0.04em;
+    }
+
+    .contact-box p {
+      margin-top: 10px;
+      color: var(--muted);
+    }
+
+    footer {
+      padding: 28px 0;
+      background: var(--navy);
+      color: rgba(255, 255, 255, 0.58);
+      text-align: center;
+      font-size: 0.88rem;
+    }
+
+    @media (max-width: 800px) {
+      .navigation {
+        flex-direction: column;
+        justify-content: center;
+        padding: 16px 0;
+      }
+
+      .nav-links {
+        gap: 18px;
+      }
+
+      .hero {
+        padding: 80px 0;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-box {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 34px 26px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        width: min(100% - 28px, 1120px);
+      }
+
+      .nav-links {
+        font-size: 0.84rem;
+      }
+
+      .hero h1 {
+        font-size: 2.65rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="container navigation">
+      <a class="brand" href="#inicio">
+        <span class="brand-symbol">F</span>
+        Factúrate
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Cómo funciona</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-content">
+        <p class="eyebrow">Facturación simple y rápida</p>
+        <h1>Convierte tus tickets en facturas sin perder tiempo.</h1>
+        <p>Sube una foto de tu ticket y Factúrate te ayuda a organizar los datos necesarios para solicitar y dar seguimiento a tu factura.</p>
+        <a class="primary-button" href="#servicios">Conocer el proceso</a>
+      </div>
+    </section>
+
+    <section class="services" id="servicios">
+      <div class="container">
+        <div class="section-heading">
+          <span>Cómo funciona</span>
+          <h2>Todo tu proceso de facturación en un solo lugar</h2>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card-number">01</div>
+            <h3>Lectura de tickets</h3>
+            <span class="card-data">Foto o PDF</span>
+            <p>Captura la información principal del ticket para evitar que tengas que copiar cada dato manualmente.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-number">02</div>
+            <h3>Perfil fiscal</h3>
+            <span class="card-data">Datos reutilizables</span>
+            <p>Organiza tu RFC, razón social, régimen, domicilio y correo para utilizarlos en futuras solicitudes.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-number">03</div>
+            <h3>Control de facturas</h3>
+            <span class="card-data">Seguimiento centralizado</span>
+            <p>Consulta cuáles solicitudes necesitan revisión, cuáles siguen en proceso y cuáles ya fueron facturadas.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contacto">
+      <div class="container">
+        <div class="contact-box">
+          <div>
+            <h2>Dedica menos tiempo a facturar.</h2>
+            <p>Conoce la versión de práctica de Factúrate y simplifica tu proceso.</p>
+          </div>
+          <a class="primary-button" href="mailto:contacto@facturate.mx">Contactar</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Factúrate. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
