@@ -1,0 +1,829 @@
+{
+  "version": "2026-10-15",
+  "checkedAt": "2026-10-25",
+  "source": "http://omawww.sat.gob.mx/tramitesyservicios/Paginas/documentos/catCFDI_V_4_20261015.xls",
+  "sha256": "fde78b456d1e0d90366bfc68f8312f9edce5703ad5dc8ccebf09c462db13a079",
+  "regimes": [
+    {
+      "code": "601",
+      "label": "General de Ley Personas Morales",
+      "persons": [
+        "moral"
+      ],
+      "start": "2022-01-01"
+    },
+    {
+      "code": "603",
+      "label": "Personas Morales con Fines no Lucrativos",
+      "persons": [
+        "moral"
+      ],
+      "start": "2022-01-01"
+    },
+    {
+      "code": "605",
+      "label": "Sueldos y Salarios e Ingresos Asimilados a Salarios",
+      "persons": [
+        "fisica"
+      ],
+      "start": "2022-01-01"
+    },
+    {
+      "code": "606",
+      "label": "Arrendamiento",
+      "persons": [
+        "fisica"
+      ],
+      "start": "2022-01-01"
+    },
+    {
+      "code": "607",
+      "label": "Régimen de Enajenación o Adquisición de Bienes",
+      "persons": [
+        "fisica"
+      ],
+      "start": "2022-01-01"
+    },
+    {
+      "code": "608",
+      "label": "Demás ingresos",
+      "persons": [
+        "fisica"
+      ],
+      "start": "2022-01-01"
+    },
+    {
+      "code": "610",
+      "label": "Residentes en el Extranjero sin Establecimiento Permanente en México",
+      "persons": [
+        "fisica",
+        "moral"
+      ],
+      "start": "2022-01-01"
+    },
+    {
+      "code": "611",
+      "label": "Ingresos por Dividendos (socios y accionistas)",
+      "persons": [
+        "fisica"
+      ],
+      "start": "2022-01-01"
+    },
+    {
+      "code": "612",
+      "label": "Personas Físicas con Actividades Empresariales y Profesionales",
+      "persons": [
+        "fisica"
+      ],
+      "start": "2022-01-01"
+    },
+    {
+      "code": "614",
+      "label": "Ingresos por intereses",
+      "persons": [
+        "fisica"
+      ],
+      "start": "2022-01-01"
+    },
+    {
+      "code": "615",
+      "label": "Régimen de los ingresos por obtención de premios",
+      "persons": [
+        "fisica"
+      ],
+      "start": "2022-01-01"
+    },
+    {
+      "code": "616",
+      "label": "Sin obligaciones fiscales",
+      "persons": [
+        "fisica"
+      ],
+      "start": "2022-01-01"
+    },
+    {
+      "code": "620",
+      "label": "Sociedades Cooperativas de Producción que optan por diferir sus ingresos",
+      "persons": [
+        "moral"
+      ],
+      "start": "2022-01-01"
+    },
+    {
+      "code": "621",
+      "label": "Incorporación Fiscal",
+      "persons": [
+        "fisica"
+      ],
+      "start": "2022-01-01"
+    },
+    {
+      "code": "622",
+      "label": "Actividades Agrícolas, Ganaderas, Silvícolas y Pesqueras",
+      "persons": [
+        "moral"
+      ],
+      "start": "2022-01-01"
+    },
+    {
+      "code": "623",
+      "label": "Opcional para Grupos de Sociedades",
+      "persons": [
+        "moral"
+      ],
+      "start": "2022-01-01"
+    },
+    {
+      "code": "624",
+      "label": "Coordinados",
+      "persons": [
+        "moral"
+      ],
+      "start": "2022-01-01"
+    },
+    {
+      "code": "625",
+      "label": "Régimen de las Actividades Empresariales con ingresos a través de Plataformas Tecnológicas",
+      "persons": [
+        "fisica"
+      ],
+      "start": "2022-01-01"
+    },
+    {
+      "code": "626",
+      "label": "Régimen Simplificado de Confianza",
+      "persons": [
+        "fisica",
+        "moral"
+      ],
+      "start": "2022-01-01"
+    }
+  ],
+  "uses": [
+    {
+      "code": "G01",
+      "label": "Adquisición de mercancías.",
+      "persons": [
+        "fisica",
+        "moral"
+      ],
+      "regimes": [
+        "601",
+        "603",
+        "606",
+        "612",
+        "620",
+        "621",
+        "622",
+        "623",
+        "624",
+        "625",
+        "626"
+      ],
+      "start": "2022-01-01"
+    },
+    {
+      "code": "G02",
+      "label": "Devoluciones, descuentos o bonificaciones.",
+      "persons": [
+        "fisica",
+        "moral"
+      ],
+      "regimes": [
+        "601",
+        "603",
+        "606",
+        "612",
+        "616",
+        "620",
+        "621",
+        "622",
+        "623",
+        "624",
+        "625",
+        "626"
+      ],
+      "start": "2022-01-01"
+    },
+    {
+      "code": "G03",
+      "label": "Gastos en general.",
+      "persons": [
+        "fisica",
+        "moral"
+      ],
+      "regimes": [
+        "601",
+        "603",
+        "606",
+        "612",
+        "620",
+        "621",
+        "622",
+        "623",
+        "624",
+        "625",
+        "626"
+      ],
+      "start": "2022-01-01"
+    },
+    {
+      "code": "I01",
+      "label": "Construcciones.",
+      "persons": [
+        "fisica",
+        "moral"
+      ],
+      "regimes": [
+        "601",
+        "603",
+        "606",
+        "612",
+        "620",
+        "621",
+        "622",
+        "623",
+        "624",
+        "625",
+        "626"
+      ],
+      "start": "2022-01-01"
+    },
+    {
+      "code": "I02",
+      "label": "Mobiliario y equipo de oficina por inversiones.",
+      "persons": [
+        "fisica",
+        "moral"
+      ],
+      "regimes": [
+        "601",
+        "603",
+        "606",
+        "612",
+        "620",
+        "621",
+        "622",
+        "623",
+        "624",
+        "625",
+        "626"
+      ],
+      "start": "2022-01-01"
+    },
+    {
+      "code": "I03",
+      "label": "Equipo de transporte.",
+      "persons": [
+        "fisica",
+        "moral"
+      ],
+      "regimes": [
+        "601",
+        "603",
+        "606",
+        "612",
+        "620",
+        "621",
+        "622",
+        "623",
+        "624",
+        "625",
+        "626"
+      ],
+      "start": "2022-01-01"
+    },
+    {
+      "code": "I04",
+      "label": "Equipo de computo y accesorios.",
+      "persons": [
+        "fisica",
+        "moral"
+      ],
+      "regimes": [
+        "601",
+        "603",
+        "606",
+        "612",
+        "620",
+        "621",
+        "622",
+        "623",
+        "624",
+        "625",
+        "626"
+      ],
+      "start": "2022-01-01"
+    },
+    {
+      "code": "I05",
+      "label": "Dados, troqueles, moldes, matrices y herramental.",
+      "persons": [
+        "fisica",
+        "moral"
+      ],
+      "regimes": [
+        "601",
+        "603",
+        "606",
+        "612",
+        "620",
+        "621",
+        "622",
+        "623",
+        "624",
+        "625",
+        "626"
+      ],
+      "start": "2022-01-01"
+    },
+    {
+      "code": "I06",
+      "label": "Comunicaciones telefónicas.",
+      "persons": [
+        "fisica",
+        "moral"
+      ],
+      "regimes": [
+        "601",
+        "603",
+        "606",
+        "612",
+        "620",
+        "621",
+        "622",
+        "623",
+        "624",
+        "625",
+        "626"
+      ],
+      "start": "2022-01-01"
+    },
+    {
+      "code": "I07",
+      "label": "Comunicaciones satelitales.",
+      "persons": [
+        "fisica",
+        "moral"
+      ],
+      "regimes": [
+        "601",
+        "603",
+        "606",
+        "612",
+        "620",
+        "621",
+        "622",
+        "623",
+        "624",
+        "625",
+        "626"
+      ],
+      "start": "2022-01-01"
+    },
+    {
+      "code": "I08",
+      "label": "Otra maquinaria y equipo.",
+      "persons": [
+        "fisica",
+        "moral"
+      ],
+      "regimes": [
+        "601",
+        "603",
+        "606",
+        "612",
+        "620",
+        "621",
+        "622",
+        "623",
+        "624",
+        "625",
+        "626"
+      ],
+      "start": "2022-01-01"
+    },
+    {
+      "code": "D01",
+      "label": "Honorarios médicos, dentales y gastos hospitalarios.",
+      "persons": [
+        "fisica"
+      ],
+      "regimes": [
+        "605",
+        "606",
+        "608",
+        "611",
+        "612",
+        "614",
+        "607",
+        "615",
+        "625"
+      ],
+      "start": "2022-01-01"
+    },
+    {
+      "code": "D02",
+      "label": "Gastos médicos por incapacidad o discapacidad.",
+      "persons": [
+        "fisica"
+      ],
+      "regimes": [
+        "605",
+        "606",
+        "608",
+        "611",
+        "612",
+        "614",
+        "607",
+        "615",
+        "625"
+      ],
+      "start": "2022-01-01"
+    },
+    {
+      "code": "D03",
+      "label": "Gastos funerales.",
+      "persons": [
+        "fisica"
+      ],
+      "regimes": [
+        "605",
+        "606",
+        "608",
+        "611",
+        "612",
+        "614",
+        "607",
+        "615",
+        "625"
+      ],
+      "start": "2022-01-01"
+    },
+    {
+      "code": "D04",
+      "label": "Donativos.",
+      "persons": [
+        "fisica"
+      ],
+      "regimes": [
+        "605",
+        "606",
+        "608",
+        "611",
+        "612",
+        "614",
+        "607",
+        "615",
+        "625"
+      ],
+      "start": "2022-01-01"
+    },
+    {
+      "code": "D05",
+      "label": "Intereses reales efectivamente pagados por créditos hipotecarios (casa habitación).",
+      "persons": [
+        "fisica"
+      ],
+      "regimes": [
+        "605",
+        "606",
+        "608",
+        "611",
+        "612",
+        "614",
+        "607",
+        "615",
+        "625"
+      ],
+      "start": "2022-01-01"
+    },
+    {
+      "code": "D06",
+      "label": "Aportaciones voluntarias al SAR.",
+      "persons": [
+        "fisica"
+      ],
+      "regimes": [
+        "605",
+        "606",
+        "608",
+        "611",
+        "612",
+        "614",
+        "607",
+        "615",
+        "625"
+      ],
+      "start": "2022-01-01"
+    },
+    {
+      "code": "D07",
+      "label": "Primas por seguros de gastos médicos.",
+      "persons": [
+        "fisica"
+      ],
+      "regimes": [
+        "605",
+        "606",
+        "608",
+        "611",
+        "612",
+        "614",
+        "607",
+        "615",
+        "625"
+      ],
+      "start": "2022-01-01"
+    },
+    {
+      "code": "D08",
+      "label": "Gastos de transportación escolar obligatoria.",
+      "persons": [
+        "fisica"
+      ],
+      "regimes": [
+        "605",
+        "606",
+        "608",
+        "611",
+        "612",
+        "614",
+        "607",
+        "615",
+        "625"
+      ],
+      "start": "2022-01-01"
+    },
+    {
+      "code": "D09",
+      "label": "Depósitos en cuentas para el ahorro, primas que tengan como base planes de pensiones.",
+      "persons": [
+        "fisica"
+      ],
+      "regimes": [
+        "605",
+        "606",
+        "608",
+        "611",
+        "612",
+        "614",
+        "607",
+        "615",
+        "625"
+      ],
+      "start": "2022-01-01"
+    },
+    {
+      "code": "D10",
+      "label": "Pagos por servicios educativos (colegiaturas).",
+      "persons": [
+        "fisica"
+      ],
+      "regimes": [
+        "605",
+        "606",
+        "608",
+        "611",
+        "612",
+        "614",
+        "607",
+        "615",
+        "625"
+      ],
+      "start": "2022-01-01"
+    },
+    {
+      "code": "S01",
+      "label": "Sin efectos fiscales.",
+      "persons": [
+        "fisica",
+        "moral"
+      ],
+      "regimes": [
+        "601",
+        "603",
+        "605",
+        "606",
+        "608",
+        "610",
+        "611",
+        "612",
+        "614",
+        "616",
+        "620",
+        "621",
+        "622",
+        "623",
+        "624",
+        "607",
+        "615",
+        "625",
+        "626"
+      ],
+      "start": "2022-01-01"
+    },
+    {
+      "code": "CP01",
+      "label": "Pagos",
+      "persons": [
+        "fisica",
+        "moral"
+      ],
+      "regimes": [
+        "601",
+        "603",
+        "605",
+        "606",
+        "608",
+        "610",
+        "611",
+        "612",
+        "614",
+        "616",
+        "620",
+        "621",
+        "622",
+        "623",
+        "624",
+        "607",
+        "615",
+        "625",
+        "626"
+      ],
+      "start": "2022-01-01"
+    },
+    {
+      "code": "CN01",
+      "label": "Nómina",
+      "persons": [
+        "fisica"
+      ],
+      "regimes": [
+        "605.0"
+      ],
+      "start": "2022-01-01"
+    }
+  ],
+  "forms": [
+    {
+      "code": "01",
+      "label": "Efectivo",
+      "start": "2022-01-01"
+    },
+    {
+      "code": "02",
+      "label": "Cheque nominativo",
+      "start": "2022-01-01"
+    },
+    {
+      "code": "03",
+      "label": "Transferencia electrónica de fondos",
+      "start": "2022-01-01"
+    },
+    {
+      "code": "04",
+      "label": "Tarjeta de crédito",
+      "start": "2022-01-01"
+    },
+    {
+      "code": "05",
+      "label": "Monedero electrónico",
+      "start": "2022-01-01"
+    },
+    {
+      "code": "06",
+      "label": "Dinero electrónico",
+      "start": "2022-01-01"
+    },
+    {
+      "code": "08",
+      "label": "Vales de despensa",
+      "start": "2022-01-01"
+    },
+    {
+      "code": "12",
+      "label": "Dación en pago",
+      "start": "2022-01-01"
+    },
+    {
+      "code": "13",
+      "label": "Pago por subrogación",
+      "start": "2022-01-01"
+    },
+    {
+      "code": "14",
+      "label": "Pago por consignación",
+      "start": "2022-01-01"
+    },
+    {
+      "code": "15",
+      "label": "Condonación",
+      "start": "2022-01-01"
+    },
+    {
+      "code": "17",
+      "label": "Compensación",
+      "start": "2022-01-01"
+    },
+    {
+      "code": "23",
+      "label": "Novación",
+      "start": "2022-01-01"
+    },
+    {
+      "code": "24",
+      "label": "Confusión",
+      "start": "2022-01-01"
+    },
+    {
+      "code": "25",
+      "label": "Remisión de deuda",
+      "start": "2022-01-01"
+    },
+    {
+      "code": "26",
+      "label": "Prescripción o caducidad",
+      "start": "2022-01-01"
+    },
+    {
+      "code": "27",
+      "label": "A satisfacción del acreedor",
+      "start": "2022-01-01"
+    },
+    {
+      "code": "28",
+      "label": "Tarjeta de débito",
+      "start": "2022-01-01"
+    },
+    {
+      "code": "29",
+      "label": "Tarjeta de servicios",
+      "start": "2022-01-01"
+    },
+    {
+      "code": "30",
+      "label": "Aplicación de anticipos",
+      "start": "2022-01-01"
+    },
+    {
+      "code": "31",
+      "label": "Intermediario pagos",
+      "start": "2022-01-01"
+    },
+    {
+      "code": "99",
+      "label": "Por definir",
+      "start": "2022-01-01"
+    }
+  ],
+  "methods": [
+    {
+      "code": "PUE",
+      "label": "Pago en una sola exhibición",
+      "start": "2022-01-01"
+    },
+    {
+      "code": "PPD",
+      "label": "Pago en parcialidades o diferido",
+      "start": "2022-01-01"
+    }
+  ],
+  "relations": [
+    {
+      "code": "01",
+      "label": "Nota de crédito de los documentos relacionados",
+      "start": "2022-01-01"
+    },
+    {
+      "code": "02",
+      "label": "Nota de débito de los documentos relacionados",
+      "start": "2022-01-01"
+    },
+    {
+      "code": "03",
+      "label": "Devolución de mercancía sobre facturas o traslados previos",
+      "start": "2022-01-01"
+    },
+    {
+      "code": "04",
+      "label": "Sustitución de los CFDI previos",
+      "start": "2022-01-01"
+    },
+    {
+      "code": "05",
+      "label": "Traslados de mercancías facturados previamente",
+      "start": "2022-01-01"
+    },
+    {
+      "code": "06",
+      "label": "Factura generada por los traslados previos",
+      "start": "2022-01-01"
+    },
+    {
+      "code": "07",
+      "label": "CFDI por aplicación de anticipo",
+      "start": "2022-01-01"
+    }
+  ]
+}
